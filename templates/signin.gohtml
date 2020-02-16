@@ -6,10 +6,6 @@
     <style>
     </style>
 </head>
-<script>
-
-
-</script>
 <body>
 
 
@@ -51,20 +47,10 @@
     </div>
 </nav>
 <div class="container">
-    <form method="POST" action="/signup">
-        <div class="form-group">
-            <label for="exampleInputEmail1">Adın</label>
-            <input type="text" class="form-control" name="name" aria-describedby="emailHelp">
-
-        </div>
-        <div class="Soyadın">
-            <label for="exampleInputEmail1">Soyadın</label>
-            <input type="text" class="form-control" name="surname" aria-describedby="emailHelp">
-
-        </div>
+    <form method="POST" action="/signin">
         <div class="E posta">
             <label for="exampleInputEmail1">E posta</label>
-            <input type="email" class="form-control" name="email" aria-describedby="emailHelp">
+            <input value="{{.email}}" type="email" class="form-control" name="email" aria-describedby="emailHelp">
 
         </div>
         <div class="form-group">
@@ -73,8 +59,7 @@
         </div>
 
 
-        <button  type="submit" class="btn btn-primary">ÜYE OL</button>
-
+        <button type="submit" class="btn btn-primary">GİRİŞ YAP</button>
     </form>
 </div>
 </body>

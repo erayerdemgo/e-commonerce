@@ -1,0 +1,10 @@
+development:
+  mode: debug
+  port: :8080
+database:
+  username: postgres
+  password: mysecretpassword
+  sslmode: disable
+  dbname: postgres
+  host: localhost
+  port: 5432

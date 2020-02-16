@@ -1,0 +1,36 @@
+CREATE TABLE CUSTOMER
+(
+    ID       SERIAL PRIMARY KEY,
+    uuid     uuid UNIQUE,
+    name     CHAR(20)        NOT NULL,
+    surname  CHAR(20)        NOT NULL,
+    email    CHAR(30) unique NOT NULL,
+    password CHAR(60)        NOT NULL
+);
+
+CREATE TABLE COLORS
+(
+    ID    SERIAL PRIMARY KEY,
+    COLOR char
+
+);
+
+
+CREATE TABLE SIZE
+(
+    ID   SERIAL PRIMARY KEY,
+    SIZE char
+);
+
+
+CREATE TABLE PRODUCT
+(
+    ID      SERIAL PRIMARY KEY,
+    BRAND   char NOT NULL,
+    STOCK   INT  not null,
+    COLORID INT  not null,
+    SIZEID  INT  NOT NULL,
+    FOREIGN KEY (COLORID) REFERENCES COLORS (ID) ON DELETE CASCADE,
+    FOREIGN KEY (SIZEID) REFERENCES SIZE (ID) ON DELETE CASCADE
+);
+
