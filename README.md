@@ -1,5 +1,7 @@
 # e-commonerce
 e commonerce app with golang
-using technoliges: go gin , postgresql , 
-</br>
+using technoliges:
+go gin , postgresql 
+
+
 <img src="file.png"/>
